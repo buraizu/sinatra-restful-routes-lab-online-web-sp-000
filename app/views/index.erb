@@ -2,3 +2,7 @@
 
 
 <a href="/recipes/new">Create a New Recipe</a>
+<form method="post" action="/recipes/<%= @recipe[:id] %>">
+  <p>Get a recipe by its id: <input id="id" name="id" type="text" />
+  <input type="submit" value="Submit" />
+</form>
