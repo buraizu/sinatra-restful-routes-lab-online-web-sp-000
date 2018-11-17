@@ -4,9 +4,9 @@
 <ul>
   <% @recipes.each.with_index(1) do |recipe, index| %>
     <p><%= index %></p>
-    <li><%= recipe.name %></li>
-    <li><%= recipe.ingredients %></li>
-    <li><%= recipe.cook_time %></li>
+    <li>Name: <%= recipe.name %></li>
+    <li>Ingredients: <%= recipe.ingredients %></li>
+    <li>Cook Time: <%= recipe.cook_time %></li>
 
   <% end %>
 
