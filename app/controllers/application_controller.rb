@@ -21,6 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes/:id/edit' do
+    binding.pry
     erb :edit
   end
 
