@@ -1,4 +1,4 @@
-<h1>Welcome to your Recipe App!  Create a new recipe:</h1>
+<h2>Create a new recipe:</h2>
 
 <form method="post" action="/recipes">
   <p><label for="name">Name: </label><input id="name" name="name" type="text" /></p>
@@ -7,7 +7,4 @@
   <p><input type="submit" value="Submit" /></p>
 </form>
 
-<form method="post" action="/recipes/<%= @recipe[:id] %>">
-  <p>Get a recipe by its id: <input id="id" name="id" type="text" />
-  <input type="submit" value="Submit" />
-</form>
+
