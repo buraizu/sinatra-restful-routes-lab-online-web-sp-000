@@ -1,4 +1,4 @@
-require 'pry'
+@require 'pry'
 class ApplicationController < Sinatra::Base
   configure do
     set :public_folder, 'public'
@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
 
   get '/recipes/:id' do
 
-    @recipe = Recipe.find_by_id(params[:id])
+    @recipe = Recipe.find_by_id(params[:recipe_id])
       binding.pry
     erb :show
   end
