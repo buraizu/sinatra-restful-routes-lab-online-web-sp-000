@@ -3,7 +3,7 @@
 <h3>Make a New Recipe:</h3>
 <a href="/recipes/new">Create a New Recipe</a>
 
-<form method="post" action="/recipes/<%= @recipe.id %>">
+<form method="post" action="/recipes/:id">
   <h3>Get a recipe by its id:</h3><input id="id" name="id" type="text" />
   <input type="submit" value="Submit" />
 </form>
