@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/index' do
-    
+
   end
 
   get '/recipes' do
@@ -25,7 +25,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes/:id/edit' do
-  
+
     erb :edit
   end
 
