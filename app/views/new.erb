@@ -6,3 +6,8 @@
   <p><label for="cook_time">Cook Time: </label><input id="cook_time" name="cook_time" type="text" /></p>
   <p><input type="submit" value="Submit" /></p>
 </form>
+
+<form method="post" action="/recipes/<%= @recipe[:id] %>">
+  <p>Get a recipe by its id: <input id="id" name="id" type="text" />
+  <input type="submit" value="Submit" />
+</form>
